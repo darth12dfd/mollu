@@ -7,7 +7,7 @@ import Spacing, { propTypes as spacingPropTypes } from './Spacing';
 
 class Card extends PureComponent {
   render() {
-    const { children, styles, ...spacingPropTypes } = this.props;
+    const { children, styles, ...spacingProps } = this.props;
     return (
       <div {...css(styles.wrapper)}>
         <Spacing {...spacingProps}>{children}</Spacing>
@@ -16,7 +16,7 @@ class Card extends PureComponent {
   }
 }
 
-Card.PropTypes = {
+Card.propTypes = {
   ...spacingPropTypes,
   ...withStylesPropTypes,
   children: PropTypes.node,
