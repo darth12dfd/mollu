@@ -53,6 +53,7 @@ class FormProvider extends React.PureComponent {
     if (!validate) {
       return;
     }
+
     const errors = this.props.validate(values);
     this.setState({
       errors,
@@ -61,6 +62,7 @@ class FormProvider extends React.PureComponent {
 
   render() {
     const { values, errors } = this.state;
+
     return (
       <Provider
         value={{

@@ -9,7 +9,7 @@ class TableHead extends PureComponent {
 
     return (
       <thead>
-        {React.Children.map(children, (child) => React.cloneElement(child, { isHeadr: true }))}
+        {React.Children.map(children, (child) => React.cloneElement(child, { isHeader: true }))}
       </thead>
     );
   }

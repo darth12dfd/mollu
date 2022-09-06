@@ -31,7 +31,7 @@ class Spacing extends PureComponent {
       ...(computedRight && { marginRight: computedRight * unit }),
     };
 
-    return <div {...css(getComputedStyle)}>{children}</div>;
+    return <div {...css(computedStyles)}>{children}</div>;
   }
 }
 

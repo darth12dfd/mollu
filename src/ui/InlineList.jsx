@@ -1,7 +1,8 @@
 //가로 배치를 위한 컴포넌트
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, css, withStylesPropTypes } from 'react-with-styles';
+import { withStyles, css, withStylesPropTypes } from './withStyles';
+import { propTypes as spacingPropTypes } from './Spacing';
 import { unit } from './Theme';
 
 class InlineList extends PureComponent {
@@ -26,6 +27,7 @@ class InlineList extends PureComponent {
 }
 
 InlineList.propTypes = {
+  ...spacingPropTypes,
   ...withStylesPropTypes,
   align: PropTypes.oneOf(['left', 'center', 'right']),
   verticalAlign: PropTypes.oneOf(['top', 'middle', 'bottom']),
@@ -49,7 +51,7 @@ export default withStyles(() => ({
     justifyContent: 'center',
   },
   alignRight: {
-    justifyContent: 'right',
+    justifyContent: 'flex-end',
   },
   verticalAlignTop: {
     justifyContent: 'flex-start',

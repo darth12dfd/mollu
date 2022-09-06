@@ -24,7 +24,7 @@ class Overview extends PureComponent {
           <Dashlet name="SRT 특수학원" />
           <Dashlet name="크로노스 스쿨" />
           <Dashlet name="와일드헌트 예술 학원" />
-          <Dashlet name="오디세이아 해양학교" />
+          <Dashlet name="오디세이 해양학교" />
         </InlineList>
       </React.Fragment>
     );

@@ -1,12 +1,12 @@
 import React, { PureComponent } from 'react';
 import AppLayout from './components/AppLayout';
-import Overview from './components/main/Overview';
+import MainPage from './components/main/MainPage';
 
 class App extends PureComponent {
   render() {
     return (
       <AppLayout>
-        <Overview />
+        <MainPage />
       </AppLayout>
     );
   }
