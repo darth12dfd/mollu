@@ -10,7 +10,7 @@ class TransactionList extends PureComponent {
   state = {
     transactions: [
       {
-        id: 'student1',
+        id: 1,
         name: '소라사키 히나',
         school: '게헨나',
         age: 17,
