@@ -6,9 +6,9 @@ import TableCell from '../../ui/TableCell';
 import TableHead from '../../ui/TableHead';
 import TableBody from '../../ui/TableBody';
 
-class TransactionTable extends PureComponent {
+class StudentTable extends PureComponent {
   render() {
-    const { transactions } = this.props;
+    const { students } = this.props;
     return (
       <Table>
         <TableHead>
@@ -20,7 +20,7 @@ class TransactionTable extends PureComponent {
           </TableRow>
         </TableHead>
         <TableBody>
-          {transactions.map(({ id, name, school, age, grade }) => (
+          {students.map(({ id, name, school, age, grade }) => (
             <TableRow key={id}>
               <TableCell>{name}</TableCell>
               <TableCell align="center">{school}</TableCell>
@@ -34,10 +34,10 @@ class TransactionTable extends PureComponent {
   }
 }
 
-TransactionTable.propTypes = {
-  transactions: PropTypes.arrayOf(
+StudentTable.propTypes = {
+  students: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
+      id: PropTypes.number,
       name: PropTypes.string,
       school: PropTypes.string,
       age: PropTypes.number,
@@ -46,4 +46,4 @@ TransactionTable.propTypes = {
   ),
 };
 
-export default TransactionTable;
+export default StudentTable;

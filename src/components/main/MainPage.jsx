@@ -1,13 +1,13 @@
 import React, { PureComponent } from 'react';
 import Overview from './Overview';
-import TransactionList from './TransactionList';
+import StudentListContainer from '../../containers/main/StudentListContainer';
 
 class MainPage extends PureComponent {
   render() {
     return (
       <React.Fragment>
         <Overview />
-        <TransactionList />
+        <StudentListContainer />
       </React.Fragment>
     );
   }

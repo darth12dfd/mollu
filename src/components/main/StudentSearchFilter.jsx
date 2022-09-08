@@ -7,7 +7,7 @@ import Select, { Option } from '../../ui/Select';
 import Input from '../../ui/Input';
 import Button from '../../ui/Button';
 
-class TransactionSearchFilter extends PureComponent {
+class StudentSearchFilter extends PureComponent {
   render() {
     return (
       <Form onSubmit={(values) => console.log(values)}>
@@ -48,6 +48,6 @@ class TransactionSearchFilter extends PureComponent {
   }
 }
 
-TransactionSearchFilter.propTypes = {};
+StudentSearchFilter.propTypes = {};
 
-export default TransactionSearchFilter;
+export default StudentSearchFilter;
