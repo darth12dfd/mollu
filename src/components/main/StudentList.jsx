@@ -3,10 +3,10 @@ import React, { PureComponent } from 'react';
 import Heading from '../../ui/Heading';
 import Card from '../../ui/Card';
 
-import StudentSearchFilter from './StudentSearchFilter';
 import StudentTable from './StudentTable';
 
 import Api from '../../Api';
+import StudentSearchFilterContainer from '../../containers/main/StudentSearchFilterContainer';
 
 class StudentList extends PureComponent {
   componentDidMount() {
@@ -19,7 +19,7 @@ class StudentList extends PureComponent {
       <div>
         <Heading level={3}>학생 인명부</Heading>
         <Card vertical={4} horizontal={4}>
-          <StudentSearchFilter />
+          <StudentSearchFilterContainer />
         </Card>
         <Card>
           <StudentTable students={students} />
