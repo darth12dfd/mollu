@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 
 import AppLayout from './components/AppLayout';
 import MainPage from './components/main/MainPage';
+import ModalProvider from './ModalProvider';
 import configureStore from './store/configureStore';
 
 class App extends PureComponent {
@@ -11,9 +12,11 @@ class App extends PureComponent {
   render() {
     return (
       <Provider store={this.store}>
-        <AppLayout>
-          <MainPage />
-        </AppLayout>
+        <ModalProvider>
+          <AppLayout>
+            <MainPage />
+          </AppLayout>
+        </ModalProvider>
       </Provider>
     );
   }
